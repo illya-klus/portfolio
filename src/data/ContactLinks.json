@@ -1,6 +1,18 @@
-{
-    "linkedIn" : "https://www.linkedin.com/in/illya-klus-0495643a0/",
-    "gitHub" : "https://github.com/illya-klus",
-    "telegram" : "https://t.me/g_oichi",
-    "email" : "klusilla2@gmail.com"
-}
+[
+  {
+    "icon": "github",
+    "link": "https://github.com/illya-klus"
+  },
+  {
+    "icon": "linkedin",
+    "link": "https://www.linkedin.com/in/illya-klus-0495643a0/"
+  },
+  {
+    "icon": "telegram",
+    "link": "https://t.me/g_oichi"
+  },
+  {
+    "icon": "mail",
+    "link": "klusilla2@gmail.com"
+  }
+]
