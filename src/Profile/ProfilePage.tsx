@@ -1,6 +1,6 @@
 import Info from "./Info";
 import Projects from "./Projects";
-import Tecnologies from "./Tecnologies";
+import Tecnologies from "./Technologies/Technologies";
 
 
 const ProfilePage = () => {
