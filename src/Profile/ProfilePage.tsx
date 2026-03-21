@@ -5,7 +5,7 @@ import Tecnologies from "./Technologies/Technologies";
 
 const ProfilePage = () => {
     return (
-    <div>
+    <div className="flex flex-col gap-10">
         <Info/>
         <Tecnologies/>
         <Projects/>

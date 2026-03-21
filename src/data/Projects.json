@@ -1,8 +1,8 @@
-{
-    "project1" : {
+[
+    {
         "name": "sportUA",
         "link": "https://sportua.vercel.app/",
-        "mainImg" : "",
+        "mainImg" : "/public/Images/sportUa.png",
         "description" : "",
         "expirience": [
             "kjsdghf uasddsfg gfjkhasgf dfgt jghiufg",
@@ -23,10 +23,10 @@
             "image1"
         ]
     },
-    "project2" : {
+    {
         "name": "sportUA",
         "link": "https://sportua.vercel.app/",
-        "mainImg" : "",
+        "mainImg" : "/public/Images/sportUa.png",
         "description" : "",
         "expirience": [
             "kjsdghf uasddsfg gfjkhasgf dfgt jghiufg",
@@ -47,10 +47,10 @@
             "image1"
         ]
     },
-    "project3" : {
+    {
         "name": "sportUA",
         "link": "https://sportua.vercel.app/",
-        "mainImg" : "",
+        "mainImg" : "/public/Images/sportUa.png",
         "description" : "",
         "expirience": [
             "kjsdghf uasddsfg gfjkhasgf dfgt jghiufg",
@@ -71,4 +71,4 @@
             "image1"
         ]
     }
-}
+]
