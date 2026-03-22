@@ -1,14 +1,17 @@
 import router from "../router/router"
 import { RouterProvider } from "react-router-dom";
-
+import { TranslationProvider } from "../data/hooks/useTranslation";
 
 
 
 function App() {
 
   return (
-    <RouterProvider router={router}>
-    </RouterProvider>
+    <TranslationProvider>
+      <RouterProvider router={router}>
+      </RouterProvider>
+    </TranslationProvider>
+
   )
 }
 

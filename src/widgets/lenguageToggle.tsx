@@ -1,4 +1,5 @@
-import { useTranslation } from "../data/useTranslation"
+import { useTranslation } from "../data/hooks/useTranslation";
+
 
 const LanguageToggle = () => {
   const { lang, toggleLang } = useTranslation();

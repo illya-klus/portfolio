@@ -1,20 +1,23 @@
 import { useEffect, useState } from "react";
-import persomalData from "../data/english/PersonalData.json";
 import me from "/public/me.jpg";
 
 import { Contacts } from "../widgets/Contacts";
+import { useTranslation } from "../data/hooks/useTranslation";
 
-const roles = [
-  persomalData.job,
-  "React Developer",
-  "Frontend Engineer",
-];
 
 const Info = () => {
   const [text, setText] = useState("");
   const [roleIndex, setRoleIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [isGlitching, setIsGlitching] = useState(false);
+
+  const {t} = useTranslation();
+
+  const roles = [
+    t.personal.job,
+    "React Developer",
+    "Frontend Engineer",
+  ];
 
   const fullText = roles[roleIndex];
 
@@ -79,7 +82,7 @@ const Info = () => {
 
           <div className="flex flex-col gap-2 text-center sm:text-left">
             <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 leading-tight">
-              {persomalData.name}
+              {t.personal.name}
             </h1>
 
             <p
@@ -93,7 +96,7 @@ const Info = () => {
             </p>
 
             <p className="text-sm text-gray-600 max-w-md leading-relaxed">
-              {persomalData.description}
+              {t.personal.description}
             </p>
           </div>
         </div>

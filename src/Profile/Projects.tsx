@@ -1,10 +1,13 @@
 import { NavLink } from "react-router";
-import projectsData from "../data/english/Projects.json";
+import { useTranslation } from "../data/hooks/useTranslation";
 
 const Projects = () => {
+  const {t} = useTranslation();
+  const projectsData = t.projects;
+
   return (
     <div className="py-12 px-4 sm:px-6">
-      <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8 sm:mb-12">
+      <h2 className="text-2xl font-bold text-gray-900 mb-6">
         Selected Projects
       </h2>
 

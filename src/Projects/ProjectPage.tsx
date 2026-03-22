@@ -1,9 +1,9 @@
 import { useParams, Navigate } from "react-router-dom";
-import projectsData from "../data/english/Projects.json";
 import ProjectHero from "./ProjectHero";
 import ProjectInfo from "./ProjectInfo";
 import ProjectExperience from "./ProjectExperience";
 import ProjectGallery from "./ProjectGallery";
+import { useTranslation } from "../data/hooks/useTranslation";
 
 // Тип для проекту
 interface Project {
@@ -17,6 +17,8 @@ interface Project {
 
 const ProjectPage = () => {
   const { pid } = useParams<{ pid: string }>();
+  const {t} = useTranslation();
+  const projectsData: Project[] = t.projects;
 
   // Знаходимо проект по name
   const project: Project | undefined = projectsData.find(
