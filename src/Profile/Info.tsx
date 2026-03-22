@@ -1,9 +1,59 @@
+import { useEffect, useState } from "react";
 import persomalData from "../data/PersonalData.json";
 import me from "/public/me.jpg";
 
 import { Contacts } from "../widgets/Contacts";
 
+const roles = [
+  persomalData.job,
+  "React Developer",
+  "Frontend Engineer",
+];
+
 const Info = () => {
+  const [text, setText] = useState("");
+  const [roleIndex, setRoleIndex] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [isGlitching, setIsGlitching] = useState(false);
+
+  const fullText = roles[roleIndex];
+
+  useEffect(() => {
+    let timeout: ReturnType<typeof setTimeout>;
+
+    const typingSpeed = Math.random() * 80 + 40;
+    const deletingSpeed = Math.random() * 40 + 20;
+
+    if (!isDeleting && text.length < fullText.length) {
+      timeout = setTimeout(() => {
+        setText(fullText.slice(0, text.length + 1));
+      }, typingSpeed);
+    } 
+    else if (isDeleting && text.length > 0) {
+      if (Math.random() < 0.2) {
+        setIsGlitching(true);
+        timeout = setTimeout(() => {
+          setIsGlitching(false);
+          setText(fullText.slice(0, text.length - 1));
+        }, 50);
+      } else {
+        timeout = setTimeout(() => {
+          setText(fullText.slice(0, text.length - 1));
+        }, deletingSpeed);
+      }
+    } 
+    else {
+      timeout = setTimeout(() => {
+        if (isDeleting) {
+          setRoleIndex((prev) => (prev + 1) % roles.length);
+        }
+        setIsDeleting(!isDeleting);
+      }, 1200);
+    }
+
+    return () => clearTimeout(timeout);
+  }, [text, isDeleting, roleIndex, fullText]);
+
   return (
     <div className="relative py-16 px-4 sm:px-6 overflow-hidden">
       
@@ -24,7 +74,6 @@ const Info = () => {
               src={me}
               alt="me"
             />
-
             <div className="absolute inset-0 rounded-full bg-blue-400 opacity-20 blur-2xl -z-10" />
           </div>
 
@@ -33,8 +82,14 @@ const Info = () => {
               {persomalData.name}
             </h1>
 
-            <p className="text-xl text-gray-700">
-              {persomalData.job}
+            <p
+              className={`
+                text-xl font-medium transition-all duration-150
+                ${isGlitching ? "text-red-500 translate-x-1" : "text-gray-700"}
+              `}
+            >
+              {text}
+              <span className="ml-1 animate-pulse">|</span>
             </p>
 
             <p className="text-sm text-gray-600 max-w-md leading-relaxed">
