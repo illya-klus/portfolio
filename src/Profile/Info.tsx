@@ -6,12 +6,12 @@ import { Contacts } from "../widgets/Contacts";
 
 const Info = () => {
   return (
-    <div className="flex items-center justify-between gap-20">
+    <div className="flex flex-col lg:flex-row items-center lg:justify-between gap-8 lg:gap-20">
       
-      <div className="flex flex-row items-center gap-6"> 
+      <div className="flex flex-col sm:flex-row items-center gap-6"> 
         <img className="w-32 h-32 bg-gray-300 rounded-full shrink-0" src={me} alt="" />
 
-        <div className="flex flex-col gap-1">
+        <div className="flex flex-col gap-1 text-center sm:text-left">
           <h1 className="text-2xl font-bold text-gray-900">
             {persomalData.name}
           </h1>
@@ -27,7 +27,7 @@ const Info = () => {
       </div>
         
     
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-2 items-center lg:items-start">
           <h3 className="text-2xl font-bold text-gray-800">Contacts</h3>
           <Contacts />
       </div>
