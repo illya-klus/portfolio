@@ -3,24 +3,68 @@ import projectsData from "../data/Projects.json";
 
 const Projects = () => {
   return (
-    <div className="py-8 px-4">
-      <h2 className="text-2xl font-bold text-gray-900 mb-6">Projects</h2>
+    <div className="py-12 px-4 sm:px-6">
+      <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8 sm:mb-12">
+        Selected Projects
+      </h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-10">
         {projectsData.map((project, index) => (
           <NavLink
             key={index}
             to={project.name}
-            className="flex flex-col items-center rounded-2xl overflow-hidden cursor-pointer border border-gray-400"
+            className={`
+              group relative overflow-hidden rounded-2xl
+              border border-gray-300 md:border-none
+              ${index % 2 === 0 ? "md:translate-y-6" : ""}
+            `}
           >
+            {/* IMAGE */}
             <img
               src={project.mainImg}
               alt={project.name}
-              className="w-full h-48 object-cover"
+              className="
+                w-full h-[200px] sm:h-[240px] md:h-[280px]
+                object-cover
+                transition duration-500 ease-out
+                group-hover:scale-110
+              "
             />
-            <span className="py-3 text-lg font-medium text-gray-900">
-              {project.name}
-            </span>
+
+            {/* MOBILE (простий варіант) */}
+            <div className="p-3 sm:p-4 md:hidden bg-white">
+              <h3 className="text-base sm:text-lg font-semibold text-gray-900">
+                {project.name}
+              </h3>
+            </div>
+
+            {/* DESKTOP OVERLAY */}
+            <div
+              className="
+                hidden md:block
+                absolute inset-0
+                bg-black/40 backdrop-blur-[2px]
+                opacity-0 group-hover:opacity-100
+                transition duration-500
+              "
+            />
+
+            {/* DESKTOP TEXT */}
+            <div
+              className="
+                hidden md:block
+                absolute bottom-6 left-6
+                text-white
+                translate-y-6 opacity-0
+                group-hover:translate-y-0 group-hover:opacity-100
+                transition duration-500 ease-out
+              "
+            >
+              <h3 className="text-xl font-semibold tracking-wide">
+                {project.name}
+              </h3>
+              <p className="text-sm opacity-80">View project →</p>
+            </div>
           </NavLink>
         ))}
       </div>
