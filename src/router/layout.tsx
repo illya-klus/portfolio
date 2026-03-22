@@ -8,7 +8,7 @@ const Layout = () => {
     <div>
 
       <main className="flex items-center justify-center py-8 px-4">
-        <div className="max-w-320">
+        <div className="max-w-7xl">
           <Outlet/>
         </div>
       </main>
