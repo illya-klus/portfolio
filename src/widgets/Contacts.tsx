@@ -28,8 +28,11 @@ const ContactItem = ({ link, icon }: ContactItemProps) => {
   const Icon = iconMap[icon];
 
   return (
-    <a href={link} target="_blank" rel="noreferrer" className="p-3 rounded-xl bg-white shadow-md border border-gray-100 transition duration-300">
-        <Icon className={`w-6 h-6 ${colorMap[icon]} transition duration-300`} />
+    <a href={link} target="_blank" rel="noreferrer" className="group relative p-3 rounded-xl transition duration-300 ">
+        <Icon className={`w-6 h-6 text-gray-400 transition duration-300 ${colorMap[icon]} `} />
+        <span className=" absolute -bottom-8 left-1/2 -translate-x-1/2 text-xs text-white bg-black px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition duration-200 whitespace-nowrap ">
+            {icon}
+        </span>
     </a>
   );
 };
