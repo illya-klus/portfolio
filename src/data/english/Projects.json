@@ -22,53 +22,5 @@
         "/public/Images/sportua/phone.png",
         "/public/Images/sportua/about.png"
       ]
-    },
-    {
-        "name": "sport",
-        "link": "https://sportua.vercel.app/",
-        "mainImg" : "/public/Images/sportUa.png",
-        "description" : "",
-        "expirience": [
-            "kjsdghf uasddsfg gfjkhasgf dfgt jghiufg",
-            "kjsdghf uasddsfg gfjkhasgf dfgt jghiufg",
-            "kjsdghf uasddsfg gfjkhasgf dfgt jghiufg",
-            "kjsdghf uasddsfg gfjkhasgf dfgt jghiufg",
-            "kjsdghf uasddsfg gfjkhasgf dfgt jghiufg",
-            "kjsdghf uasddsfg gfjkhasgf dfgt jghiufg",
-            "kjsdghf uasddsfg gfjkhasgf dfgt jghiufg",
-            "kjsdghf uasddsfg gfjkhasgf dfgt jghiufg"
-        ],
-        "images": [
-            "image1",
-            "image1",
-            "image1",
-            "image1",
-            "image1",
-            "image1"
-        ]
-    },
-    {
-        "name": "sportA",
-        "link": "https://sportua.vercel.app/",
-        "mainImg" : "/public/Images/sportUa.png",
-        "description" : "",
-        "expirience": [
-            "kjsdghf uasddsfg gfjkhasgf dfgt jghiufg",
-            "kjsdghf uasddsfg gfjkhasgf dfgt jghiufg",
-            "kjsdghf uasddsfg gfjkhasgf dfgt jghiufg",
-            "kjsdghf uasddsfg gfjkhasgf dfgt jghiufg",
-            "kjsdghf uasddsfg gfjkhasgf dfgt jghiufg",
-            "kjsdghf uasddsfg gfjkhasgf dfgt jghiufg",
-            "kjsdghf uasddsfg gfjkhasgf dfgt jghiufg",
-            "kjsdghf uasddsfg gfjkhasgf dfgt jghiufg"
-        ],
-        "images": [
-            "image1",
-            "image1",
-            "image1",
-            "image1",
-            "image1",
-            "image1"
-        ]
     }
 ]
