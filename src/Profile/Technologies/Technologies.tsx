@@ -21,7 +21,7 @@ const TechItem = ({ tech, active }: TechItemProps) => {
   <div
     className={`
       absolute top-1/2 left-1/2
-      w-16 aspect-square
+      w-6 sm:w-16 aspect-square
       -translate-x-1/2 -translate-y-1/2
       rounded-full blur-2xl opacity-30
       pointer-events-none
