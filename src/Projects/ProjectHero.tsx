@@ -22,8 +22,8 @@ const ProjectHero = ({ project }: any) => {
       <button
         onClick={() => navigate(-1)}
         className="
-          fixed top-10 left-4 z-20
-          sm:absolute smL:top-4 sm:left-4
+          fixed top-4 left-4 z-20
+          sm:absolute
           bg-black text-white
           sm:bg-white/80 sm:text-gray-900 font-semibold
           px-5 py-1 rounded-full
