@@ -8,7 +8,7 @@ const Projects = () => {
   return (
     <div className="py-12 px-4 sm:px-6">
       <h2 className="text-2xl font-bold text-gray-900 mb-6">
-        Selected Projects
+        Projects
       </h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-10">
