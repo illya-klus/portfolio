@@ -24,7 +24,7 @@
       ]
     },
     {
-        "name": "sportUA",
+        "name": "sport",
         "link": "https://sportua.vercel.app/",
         "mainImg" : "/public/Images/sportUa.png",
         "description" : "",
@@ -48,7 +48,7 @@
         ]
     },
     {
-        "name": "sportUA",
+        "name": "sportA",
         "link": "https://sportua.vercel.app/",
         "mainImg" : "/public/Images/sportUa.png",
         "description" : "",

@@ -16,11 +16,11 @@ interface Project {
 }
 
 const ProjectPage = () => {
-  const { id } = useParams<{ id: string }>(); // id = name проекту з URL
+  const { pid } = useParams<{ pid: string }>();
 
   // Знаходимо проект по name
   const project: Project | undefined = projectsData.find(
-    (p) => p.name.toLowerCase() === id?.toLowerCase()
+    (p) => p.name.toLowerCase() === pid?.toLowerCase()
   );
 
   // Якщо не знайдено, можна редиректнути на сторінку з проектами
