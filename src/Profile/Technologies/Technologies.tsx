@@ -17,25 +17,24 @@ const TechItem = ({ tech, active }: TechItemProps) => {
 
   return (
     <div className="relative flex flex-col items-center p-4 overflow-visible">
-      {/* Glow background */}
       {active && (
-        <div
-          className={`
-            absolute w-12 h-12 rounded-full blur-xl opacity-40
-            ${techColorMap[tech].bg}
-          `}
-        />
-      )}
-
-      {/* Icon */}
+  <div
+    className={`
+      absolute top-1/2 left-1/2
+      w-16 aspect-square
+      -translate-x-1/2 -translate-y-1/2
+      rounded-full blur-2xl opacity-30
+      pointer-events-none
+      ${techColorMap[tech].bg}
+    `}
+  />
+)}
       <Icon
         className={`
           w-10 h-10 transition duration-300 z-10
           ${active ? techColorMap[tech].icon : "text-gray-400 scale-100"}
         `}
       />
-
-      {/* Label */}
       <span className="mt-2 text-xs sm:text-sm text-gray-900 font-medium text-center">
         {techLabelMap[tech]}
       </span>

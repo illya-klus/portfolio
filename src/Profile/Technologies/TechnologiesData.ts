@@ -45,7 +45,6 @@ export const techIconMap: Record<string, any> = {
   firebase: SiFirebase,
 };
 
-// 🔥 нова структура
 export const techColorMap: Record<string, { icon: string; bg: string }> = {
   react: {
     icon: "text-cyan-400 scale-105 md:scale-110",
