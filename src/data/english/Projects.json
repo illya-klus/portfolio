@@ -2,7 +2,7 @@
     {
       "name": "sportUA",
       "link": "https://sportua.vercel.app",
-      "mainImg": "/public/Images/sportua/sportUa.png",
+      "mainImg": "/Images/sportua/sportUa.png",
       "description": "SportUA is an online store for sports goods, created as a freelance project for a small business. The project allows users to quickly and conveniently purchase sports items online, featuring a unique design, dynamic product pages, and integration with databases for products, authentication, and cart functionality.",      
       "expirience": [
         "Full website development from scratch – from design to finished product.",
