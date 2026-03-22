@@ -19,26 +19,24 @@ const Projects = () => {
               ${index % 2 === 0 ? "md:translate-y-6" : ""}
             `}
           >
-            {/* IMAGE */}
+
             <img
               src={project.mainImg}
               alt={project.name}
               className="
-                w-full h-[200px] sm:h-[240px] md:h-[280px]
+                w-full h-50 sm:h-60 md:h-70
                 object-cover
                 transition duration-500 ease-out
                 group-hover:scale-110
               "
             />
 
-            {/* MOBILE (простий варіант) */}
             <div className="p-3 sm:p-4 md:hidden bg-white">
               <h3 className="text-base sm:text-lg font-semibold text-gray-900">
                 {project.name}
               </h3>
             </div>
 
-            {/* DESKTOP OVERLAY */}
             <div
               className="
                 hidden md:block
@@ -49,7 +47,6 @@ const Projects = () => {
               "
             />
 
-            {/* DESKTOP TEXT */}
             <div
               className="
                 hidden md:block
