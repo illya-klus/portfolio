@@ -12,7 +12,7 @@ const Projects = () => {
         {projectsData.map((project, index) => (
           <NavLink
             key={index}
-            to={project.name}
+            to={"/projects/"+project.name}
             className={`
               group relative overflow-hidden rounded-2xl
               border border-gray-300 md:border-none
