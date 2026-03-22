@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import persomalData from "../data/PersonalData.json";
+import persomalData from "../data/english/PersonalData.json";
 import me from "/public/me.jpg";
 
 import { Contacts } from "../widgets/Contacts";

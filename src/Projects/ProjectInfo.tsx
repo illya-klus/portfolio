@@ -1,25 +1,31 @@
 const ProjectInfo = ({ project }: any) => {
   return (
-    <div className="grid md:grid-cols-2 gap-10 items-start">
-      <p className="text-gray-700 leading-relaxed">
-        {project.description ||
-          "This project demonstrates my ability to build scalable frontend applications with clean UI and good UX practices."}
-      </p>
+    <div className="flex flex-col gap-6 sm:gap-8 ">
+      
+      <div className="flex flex-col gap-2">
+        <h3 className="text-3xl font-bold  uppercase tracking-wider ">
+          Description
+        </h3>
+        <p className="text-gray-800 text-base sm:text-lg leading-relaxed">
+          {project.description ||
+            "This project demonstrates my ability to build scalable frontend applications with clean UI and good UX practices."}
+        </p>
+      </div>
 
-      <div className="flex flex-col gap-3">
-        <span className="text-sm text-gray-500 uppercase tracking-wide">
+      <div className="flex flex-col sm:flex-col gap-2 ">
+        <h3 className="text-xl font-bold uppercase tracking-wider ">
           Live Project
-        </span>
-
+        </h3>
         <a
           href={project.link}
           target="_blank"
           rel="noreferrer"
-          className="text-lg font-medium text-blue-600 hover:underline"
+          className="text-blue-600 font-medium hover:underline"
         >
           {project.link}
         </a>
       </div>
+
     </div>
   );
 };

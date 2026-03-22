@@ -1,5 +1,5 @@
 import { NavLink } from "react-router";
-import projectsData from "../data/Projects.json";
+import projectsData from "../data/english/Projects.json";
 
 const Projects = () => {
   return (

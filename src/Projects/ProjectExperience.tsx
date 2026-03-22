@@ -1,22 +1,13 @@
 const ProjectExperience = ({ project }: any) => {
   return (
-    <div>
-      <h2 className="text-2xl font-bold mb-6">
+    <div className="py-8">
+      <h2 className="text-3xl font-bold mb-6 text-gray-900 border-b border-gray-300 pb-2">
         What I did
       </h2>
 
-      <ul className="grid sm:grid-cols-2 gap-4">
+      <ul className="list-disc list-inside space-y-2 text-gray-800 text-sm sm:text-base">
         {project.expirience.map((item: string, index: number) => (
-          <li
-            key={index}
-            className="
-              text-sm text-gray-700
-              p-4 rounded-xl
-              bg-gray-50
-              hover:bg-gray-100
-              transition
-            "
-          >
+          <li key={index}>
             {item}
           </li>
         ))}

@@ -21,8 +21,8 @@ const ProjectGallery = ({ project }: any) => {
   }, [total]);
 
   return (
-    <div className="relative">
-      <h2 className="text-2xl font-bold mb-6">Preview</h2>
+    <div className="relative py-6">
+      <h2 className="text-3xl font-bold mb-6">Preview</h2>
 
       <div className="relative w-full max-w-3xl mx-auto flex items-center justify-center">
         <img
