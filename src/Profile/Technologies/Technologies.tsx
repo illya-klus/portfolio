@@ -23,7 +23,7 @@ const Tecnologies = () => {
     <div className="py-8 px-4">
       <h2 className="text-2xl font-bold text-gray-900 mb-6">Technologies</h2>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6">
+      <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-12  gap-6">
         {techList.map((tech) => (
           <TechItem key={tech} tech={tech} />
         ))}
