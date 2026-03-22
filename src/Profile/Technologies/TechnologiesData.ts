@@ -15,7 +15,6 @@ import {
   SiFirebase,
 } from "react-icons/si";
 
-// Список технологій
 export const techList = [
   "react",
   "ts",
@@ -31,7 +30,6 @@ export const techList = [
   "firebase",
 ];
 
-// Мапа іконок
 export const techIconMap: Record<string, any> = {
   react: FaReact,
   ts: SiTypescript,
@@ -47,20 +45,56 @@ export const techIconMap: Record<string, any> = {
   firebase: SiFirebase,
 };
 
-// Кольори брендів для hover glow
-export const techColorMap: Record<string, string> = {
-  react: "scale-110 text-cyan-400  drop-shadow-[0_0_10px_#22d3ee]",
-  ts: " scale-110 text-blue-500  drop-shadow-[0_0_10px_#3b82f6]",
-  js: " scale-110 text-yellow-400  drop-shadow-[0_0_10px_#facc15]",
-  html: " scale-110 text-orange-500  drop-shadow-[0_0_10px_#f97316]",
-  css: " scale-110 text-blue-400  drop-shadow-[0_0_10px_#60a5fa]",
-  git: " scale-110 text-orange-600  drop-shadow-[0_0_10px_#f97316]",
-  redux: " scale-110 text-purple-500  drop-shadow-[0_0_10px_#a855f7]",
-  tailwind: " scale-110 text-sky-400  drop-shadow-[0_0_10px_#38bdf8]",
-  vite: " scale-110 text-purple-400  drop-shadow-[0_0_10px_#c084fc]",
-  supabase: " scale-110 text-teal-400  drop-shadow-[0_0_10px_#2dd4bf]",
-  node: " scale-110 text-green-500  drop-shadow-[0_0_10px_#3fd45d]",
-  firebase: " scale-110 text-yellow-400  drop-shadow-[0_0_10px_#facc15]",
+// 🔥 нова структура
+export const techColorMap: Record<string, { icon: string; bg: string }> = {
+  react: {
+    icon: "text-cyan-400 scale-105 md:scale-110",
+    bg: "bg-cyan-400",
+  },
+  ts: {
+    icon: "text-blue-500 scale-105 md:scale-110",
+    bg: "bg-blue-500",
+  },
+  js: {
+    icon: "text-yellow-400 scale-105 md:scale-110",
+    bg: "bg-yellow-400",
+  },
+  html: {
+    icon: "text-orange-500 scale-105 md:scale-110",
+    bg: "bg-orange-500",
+  },
+  css: {
+    icon: "text-blue-400 scale-105 md:scale-110",
+    bg: "bg-blue-400",
+  },
+  git: {
+    icon: "text-orange-600 scale-105 md:scale-110",
+    bg: "bg-orange-600",
+  },
+  redux: {
+    icon: "text-purple-500 scale-105 md:scale-110",
+    bg: "bg-purple-500",
+  },
+  tailwind: {
+    icon: "text-sky-400 scale-105 md:scale-110",
+    bg: "bg-sky-400",
+  },
+  vite: {
+    icon: "text-purple-400 scale-105 md:scale-110",
+    bg: "bg-purple-400",
+  },
+  supabase: {
+    icon: "text-teal-400 scale-105 md:scale-110",
+    bg: "bg-teal-400",
+  },
+  node: {
+    icon: "text-green-500 scale-105 md:scale-110",
+    bg: "bg-green-500",
+  },
+  firebase: {
+    icon: "text-yellow-400 scale-105 md:scale-110",
+    bg: "bg-yellow-400",
+  },
 };
 
 export const techLabelMap: Record<string, string> = {
