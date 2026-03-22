@@ -15,12 +15,12 @@
         "Created a unique design with clean component structure."
       ],
       "images": [
-        "/public/Images/sportua/products.png",
-        "/public/Images/sportua/cart.png",
-        "/public/Images/sportua/login.png",
-        "/public/Images/sportua/product.png",
-        "/public/Images/sportua/phone.png",
-        "/public/Images/sportua/about.png"
+        "/Images/sportua/products.png",
+        "/Images/sportua/cart.png",
+        "/Images/sportua/login.png",
+        "/Images/sportua/product.png",
+        "/Images/sportua/phone.png",
+        "/Images/sportua/about.png"
       ]
     }
 ]
